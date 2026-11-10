@@ -1,0 +1,33 @@
+@font-face {
+  font-family: "Kaishu Latin";
+  src: url("assets/KaishuLatinV3-Regular.otf") format("opentype");
+  font-display: swap;
+}
+
+.type-cover { font-family: "Kaishu Latin", Georgia, serif; }
+
+.specimen-frame {
+  padding: clamp(18px, 3.5vw, 40px);
+  background: #ffffff0d;
+  color: var(--stage-text);
+}
+.specimen-alphabet {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px 24px;
+  margin: 0 0 24px;
+  font: 400 clamp(23px, 4.4vw, 62px)/1.1 "Kaishu Latin", Georgia, serif;
+  overflow-wrap: anywhere;
+}
+.specimen-frame label { display: block; font-size: 14px; }
+.specimen-frame input {
+  display: block;
+  width: 100%;
+  margin-top: 8px;
+  padding: 9px 0;
+  border: 0;
+  border-bottom: 1px solid #ffffff75;
+  background: transparent;
+  color: inherit;
+  font: 400 clamp(26px, 4.6vw, 64px)/1.15 "Kaishu Latin", Georgia, serif;
+}
